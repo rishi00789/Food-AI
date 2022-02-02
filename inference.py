@@ -23,8 +23,8 @@ def get_recipe(image_bytes):
 		ingr_ids = outputs['ingr_ids'].cpu().numpy()
 		recipe_ids = outputs['recipe_ids'].cpu().numpy()
 		data_dir = 'data/'
-		ingrs_vocab = pickle.load(open(os.path.join(data_dir, 'ingr_vocab.pkl'), 'rb'))
-		vocab = pickle.load(open(os.path.join(data_dir, 'instr_vocab.pkl'), 'rb'))
+		ingrs_vocab = pickle.load(open('ingr_vocab.pkl','rb'))
+		vocab = pickle.load(open('instr_vocab.pkl','rb'))
 		outs, valid = prepare_output(recipe_ids[0], ingr_ids[0], ingrs_vocab, vocab)
 		len1.append(len(outs['ingrs']))
 		len2.append(len(outs['recipe']))
