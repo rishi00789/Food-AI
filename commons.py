@@ -13,8 +13,8 @@ import torchvision.transforms as transforms
 
 def g_model():
 	data_dir = 'data/'
-	ingrs_vocab = pickle.load(open(os.path.join(data_dir, 'ingr_vocab.pkl'), 'rb'))
-	vocab = pickle.load(open(os.path.join(data_dir, 'instr_vocab.pkl'), 'rb'))
+	ingrs_vocab = pickle.load(open('ingr_vocab.pkl','rb'))
+	vocab = pickle.load(open('instr_vocab.pkl','rb'))
 	ingr_vocab_size = len(ingrs_vocab)
 	instrs_vocab_size = len(vocab)
 	output_dim = instrs_vocab_size
@@ -26,7 +26,7 @@ def g_model():
 	args.ingrs_only=False
 	model = get_model(args, ingr_vocab_size, instrs_vocab_size)
 	# Load the trained model parameters
-	model_path = os.path.join(data_dir, 'modelbest.ckpt')
+	model_path = '/modelbest.ckpt')
 	model.load_state_dict(torch.load(model_path, map_location='cpu'))
 	model.to('cpu')
 	model.eval()
