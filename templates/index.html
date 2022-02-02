@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FOO&lt;D&gt;CODER</title>
+        <style>
+            .name{
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                overflow: hidden; 
+                background-image: url("https://wallpaperaccess.com/full/651605.jpg");
+            }
+            h1{
+                font-family: bahnschrift;
+                color:black;
+                text-align: center;
+                position: absolute;
+                bottom: 25%;
+                top: 65%;
+                left: 38%;
+                right: auto;
+                transform: translate(0%, 30%);
+            }
+            span{
+                color:navy;
+            }
+            .row{
+                height: 100%;
+                width: 100%;
+                position: fixed;
+                z-index: 1;
+                overflow-x: hidden;
+               
+            }
+            
+            h3{
+                font-size: 50px;
+                text-align: center;
+                position: absolute;
+                bottom: 25%;
+                top: -25%;
+                left: 20%;
+                right: auto;
+                transform: translate(0%, 30%);
+            }
+            input[type=file]{
+                position: absolute;
+                top: 130px;
+                right:100px;
+                color: navajowhite;
+                background-color:lightseagreen ;
+                padding: 10px 25px;
+                background: solid;
+                border: 1px solid gray;
+                border-radius: 20px;
+                outline:none;
+                cursor: pointer;
+            }
+            input[type=submit]{
+                position: absolute;
+                top: 180px;
+                right:100px;
+                color: navajowhite;
+                background-color:lightseagreen ;
+                padding: 10px 25px;
+                background: solid;
+                border: 1px solid gray;
+                border-radius: 20px;
+                outline:none;
+                cursor: pointer;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <div>
+            <div class="row name">
+                <h1 style="font-size: 50px;",style="font-family:bahnschrift;",class="text-center font-weight-bolder">FOO<span>&lt;D&gt;</span>CODER</h1>
+            </div>
+            <div class="row attach">
+                <h3 style="font-family:bahnschrift;">Upload a picture of a food to get it's recipe!</h3>
+                <form method ='post' enctype=multipart/form-data>
+                <div class="container">
+                    <div class="row">
+                      <div class="col" style="padding-left: 50px;">
+                        <input type="file" name="file">
+                      </div>
+                      <div class="col">
+                        <input type="submit" value="UPLOAD">
+                        <ul class="actions">
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

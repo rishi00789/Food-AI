@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FOOD-AI</title>
+	<style>body{
+				background-image: url("https://wallpaperbat.com/img/482870-pastel-orange-solid-color-background-free-download-vector-image-png-psd-files.jpg");
+				/*background-color: blue;    */  
+                -webkit-background-size: cover;
+  				-moz-background-size: cover;
+  				-o-background-size: cover;
+  				background-size: cover;
+                overflow: scroll;
+	}
+
+	h1{
+		font-family: bahnschrift;
+		text-align: center;
+		position: absolute;
+		transform: translate(4%, 30%);
+		color:black;
+	}
+	.d{
+    	color:navy;
+	} 
+	h2,h4{
+		font-family: bahnschrift;
+		text-align: center;
+		position: relative;
+		transform: translate(-25%,0%);
+		color:#422057ff
+		
+	}
+	.recipe{
+		font-family: bahnschrift;
+		transform: translate(2%,15%);
+		color:#422057ff;
+	}
+	
+
+	</style>
+</head>
+<body>
+	<h1 style="font-size:75px">FOOD-<span class="d">&lt;AI&gt;</span></h1>
+	<div class="recipe">
+		<h2>Possible Recipes</h2>
+		{%for j in range(0, 4)%}
+		<h4>RECIPE {{j+1}}</h4>
+		<p><strong>Title:</strong> {{ title[j] }}</p>
+		<p><strong>Ingridient:</strong></p>
+		<p> 
+	 
+		<p>{{ingrs[j]}}</p> 
+	
+		</p>
+		
+		<p><strong>Instruction:</strong> </p>
+		<ol> 
+		
+		{%for i in range(0, len2[j])%} 
+	  
+		<li>{{recipe[j][i]}}</li> 
+		{%endfor%} 
+	  
+		</ol>
+		{%endfor%}
+	</div>
+	
+</body>
+</html>

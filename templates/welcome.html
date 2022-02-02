@@ -1,0 +1,128 @@
+<!doctype html>
+
+  <head>
+    <title>FOOD-AI</title>
+    <style>
+        body{
+            
+            background-image: url("https://wallpaperaccess.com/full/1976706.jpg");
+            -webkit-background-size: cover;
+  				-moz-background-size: cover;
+  				-o-background-size: cover;
+  				background-size: cover;
+          overflow: hidden;  
+          
+        }
+        
+
+  
+        h1{
+            font-family: bahnschrift;
+            color:black;
+            text-align: center;
+            position: absolute;
+            bottom: 25%;
+            top: 78%;
+            left: 850px;
+            right: auto;
+            transform: translate(0%, 30%);
+        }
+        span{
+            color:navy;
+        }
+        
+        h5{
+
+            font-family: bahnschrift;
+            text-align: center;
+            position: absolute;
+            bottom: 25%;
+            top: -300px;
+            left: 20px;
+            right: auto;
+            transform: translate(0%, 30%);
+        }
+        
+        h3{
+            font-family: bahnschrift;
+            text-align: center;
+            position: absolute;
+            bottom: 20%;
+            top: -22%;
+            left: 33%;
+            right: auto;
+            transform: translate(0%, 30%);
+        }
+        input[type=file]{
+            position: absolute;
+            top: 200px;
+            left:800px;
+            color:#fbf8be;
+            background-color:#234e70;
+            padding: 10px 25px;
+            background: solid;
+            border: 1px solid gray;
+            border-radius: 20px;
+            outline:none;
+            cursor: pointer;
+        }
+        input[type=submit]{
+            position: absolute;
+            top: 280px;
+            left:900px;
+            color:#fbf8be;
+            background-color:#234e70;
+            padding: 10px 25px;
+            background: solid;
+            border: 1px solid gray;
+            border-radius: 20px;
+            outline:none;
+            cursor: pointer;
+        }
+        .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+            position: absolute !important;
+            top: 10px !important;
+            left:1750px !important;
+            padding: 10px 25px !important;
+            background: solid !important;
+            color:#fbf8be !important ;
+            border: 1px solid gray !important;
+            border-radius: 20px !important;
+            outline:none !important;
+            cursor: pointer !important;
+            background-color:#234e70 !important;
+        
+}
+
+            
+    </style>
+    
+  </head>
+  <body>
+
+    
+          <div>
+            <div class="row name">
+                <h1 style="font-size: 50px;",style="font-family:bahnschrift;",class="text-center font-weight-bolder">FOOD-<span class="d">&lt;AI&gt;</span></h1>
+            </div>
+            <div class="row attach">
+                <h3 style="font-size: 35px;",style="font-family:bahnschrift;">Upload a picture of a food to get it's recipe!</h3>
+                <h5 style="font-size: 25px;",style="font-family:bahnschrift;">Welcome,User</h5>
+                <form method ='post' enctype=multipart/form-data>
+                <div class="container">
+                    <div class="row">
+                      <div class="col" style="padding-left: 50px;">
+                        <input type="file" name="file">
+                      </div>
+                      <div class="col">
+                        <input type="submit" onclick="myFunction()" value="UPLOAD">
+                        <ul class="actions">
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+   
+  </body>
