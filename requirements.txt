@@ -13,5 +13,4 @@ tensorboardX
 Flask
 Werkzeug
 pandas
-pickle
 gunicorn
