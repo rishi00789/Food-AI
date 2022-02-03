@@ -1,3 +1,4 @@
+-f https://download.pytorch.org/whl/cpu/torch_stable.html
 numpy
 scipy
 matplotlib
