@@ -8,8 +8,6 @@ nltk
 Pillow
 tqdm
 lmdb
-tensorflow
-tensorboardX
 Flask
 Werkzeug
 pandas
