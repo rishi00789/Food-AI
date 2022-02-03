@@ -4,6 +4,7 @@ scipy
 matplotlib
 torch==1.10.2+cpu
 torchvision==0.11.3+cpu
+tensorflow-cpu
 nltk
 Pillow
 tqdm
@@ -12,3 +13,4 @@ Flask
 Werkzeug
 pandas
 gunicorn
+
